@@ -64,6 +64,31 @@ namespace CardGame
         }
     }
 
+    public class Deck
+    {
+        public Deck()
+        {
+            // TODO: Build the deck here. Put cards in order.
+        }
+
+        public void Shuffle()
+        {
+        }
+
+        public IDictionary<Player, IEnumerable<Card>> Distribute(IEnumerable<Player> players)
+        {
+            if (players == null)
+            {
+                throw new ArgumentNullException("players");
+            }
+
+            // TODO: try to find the dealer inside the players. throw if there is no.
+            // TODO: return cards for each player as a dicktionary.
+
+            throw new NotImplementedException();
+        }
+    }
+
     public class GameMove
     {
     }
